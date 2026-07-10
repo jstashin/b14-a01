@@ -38,7 +38,7 @@ nav ul li a{
     font-size:18px;
 }
 
-button{
+.btn{
     background:#2563EB;
     color:white;
     border:none;
@@ -47,4 +47,21 @@ button{
     font-size:18px;
     font-weight:bold;
     cursor:pointer;
+}
+.hero{
+    text-align: center;
+    
+    color:white;
+}
+.hero h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./assets/banner.jpg");
+     display: flex;
+    justify-content: center;
+    align-items: center;
 }
