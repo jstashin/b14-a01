@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+
+header{
+   
+     max-width:1600px;
+    margin:auto;
+    padding: 12px 12px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+
+header img{
+    height:55px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:80px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#888888;
+    font-size:18px;
+}
+
+button{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:18px 40px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
