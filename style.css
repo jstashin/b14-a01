@@ -1,12 +1,13 @@
 *{
     margin:0;
     padding:0;
+    font-family: "Raleway", sans-serif;
     
 }
 
 header{
    
-     max-width:1600px;
+    max-width:1600px;
     margin:auto;
     padding: 12px 12px;
     display:flex;
@@ -34,12 +35,12 @@ nav ul{
 
 nav ul li a{
     text-decoration:none;
-    color:#888888;
+    color:#575757;
     font-size:18px;
 }
 
 .btn{
-    background:#2563EB;
+    background:#1D4ED8;
     color:white;
     border:none;
     padding:18px 40px;
@@ -48,20 +49,282 @@ nav ul li a{
     font-weight:bold;
     cursor:pointer;
 }
-.hero{
-    text-align: center;
-    
-    color:white;
-}
-.hero h1{
-    font-size: 70px;
-    font-weight: bold;
-}
+
 .banner{
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("./assets/banner.jpg");
-     display: flex;
-    justify-content: center;
+    width:100%;
+    height:800px;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("./assets/banner.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.hero{
+    text-align:center;
+    color:white;
+    margin-top:-60px;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:bold;
+}
+
+.hero h1 em{
+    font-style:italic;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:20px;
+    
+}
+.hero button{
+    margin-top:250px;
+
+}
+.speaker h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.speaker{
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.speaker h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.speaker-card{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.speaker-card div{
+    border:1px solid #e5e5e5;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.speaker-card img{
+    width:100%;
+    display:block;
+}
+
+.label{
+    color:#2563EB;
+    font-size:14px;
+    font-weight:bold;
+    padding:20px 20px 0;
+}
+
+.speaker-card h2{
+    padding:10px 20px;
+}
+
+.speaker-card p{
+    padding:0 20px 20px;
+    color:#575757;
+}
+.pricing{
+    padding: 80px 0;
+    background:white;
+}
+
+.pricing-heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pricing-heading h1{
+    font-size: 48px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.pricing-heading p{
+    color: gray;
+}
+
+.pricing-cards{
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.price-card{
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card h4{
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.price-card h2{
+    font-size: 55px;
+    color: #0F172A;
+}
+
+.price-info{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.price-card hr{
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #d1d5db;
+}
+
+.price-card ul{
+    padding-left: 20px;
+}
+
+.price-card ul li::marker{
+    color: #2563EB;
+}
+.price-card ul li{
+    margin-bottom: 18px;
+}
+
+
+.price-card button{
+    margin-top: auto;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.outline-button{
+    border: 1px solid #2563EB;
+    color: #2563EB;
+    background: white;
+}
+
+.pro{
+    background: #0F1B2D;
+    color: white;
+}
+
+.pro h4{
+    
+    color:#93C5FD;
+}
+
+.pro h2{
+    color: white;
+}
+
+.pro .price-info{
+    color: #d1d5db;
+}
+
+.pro hr{
+    border-top: 1px solid #334155;
+}
+
+.pro li{
+    color: white;
+}
+
+.primary-button{
+    background: #2563EB;
+    color: white;
+    border: none;
+}
+
+.dark-outline-button{
+    border: 1px solid #111827;
+    background: white;
+    color: #111827;
+}
+.faq{
+    width: 900px;
+    margin: 80px auto;
+}
+
+.faq h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.faq-description{
+    
+    text-align: center;
+    color: gray;
+    margin-bottom: 40px;
+
+}
+
+.faq-card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faq-card h3{
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.faq-card p{
+    color: #2563EB;
+    line-height: 1.6;
+}
+.footer{
+    background-color: #d1d5db;
+    padding: 40px 80px;
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.footer-top img{
+    height: 55px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+
+
+.footer hr{
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #334155;
+}
+
+.copyright{
+    text-align: center;
+    color: black;
+    font-size:15px;
 }
